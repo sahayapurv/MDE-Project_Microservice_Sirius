@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:micro="http://it.univa.disim.micro" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis xmi:id="_7T63oHU_EeiihJuuTmLDxQ" selectedViews="_yxFecHVAEeiihJuuTmLDxQ" version="12.1.0.201708031200">
+    <semanticResources>NewMicroserviceArchitecture.xmi</semanticResources>
+    <semanticResources>platform:/resource/Microservice_EMF/model/microArch.ecore</semanticResources>
+    <semanticResources>http://www.eclipse.org/emf/2002/Ecore</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_yxFecHVAEeiihJuuTmLDxQ">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/mymicroservice.design/description/mymicroservice.odesign#//@ownedViewpoints[name='MicroserviceViewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_zASYFXVAEeiihJuuTmLDxQ" name="new MicroserviceDiagram" repPath="#_zAInEHVAEeiihJuuTmLDxQ">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/mymicroservice.design/description/mymicroservice.odesign#//@ownedViewpoints[name='MicroserviceViewpoint']/@ownedRepresentations[name='MicroserviceDiagram']"/>
+        <target xmi:type="micro:MicroserviceArchitecture" href="NewMicroserviceArchitecture.xmi#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_Pi3uBX4kEeir2I1CU434ug" name="new Microservice Container Diagram_Model" repPath="#_Pit9AH4kEeir2I1CU434ug">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/mymicroservice.design/description/mymicroservice.odesign#//@ownedViewpoints[name='MicroserviceViewpoint']/@ownedRepresentations[name='Microservice%20Container%20Diagram']"/>
+        <target xmi:type="micro:MicroserviceArchitecture" href="NewMicroserviceArchitecture.xmi#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram xmi:id="_zASYEHVAEeiihJuuTmLDxQ" name="new MicroserviceDiagram" uid="_zAInEHVAEeiihJuuTmLDxQ">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_zASYEXVAEeiihJuuTmLDxQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_zASYEnVAEeiihJuuTmLDxQ"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_zAbiAHVAEeiihJuuTmLDxQ" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_zAbiAXVAEeiihJuuTmLDxQ" type="Sirius" element="_zASYEHVAEeiihJuuTmLDxQ" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_33_G0HVAEeiihJuuTmLDxQ" type="2001" element="_33184HVAEeiihJuuTmLDxQ">
+          <children xmi:type="notation:Node" xmi:id="_33_G03VAEeiihJuuTmLDxQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_33_G1HVAEeiihJuuTmLDxQ" x="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_33_G1XVAEeiihJuuTmLDxQ" type="3005" element="_33184XVAEeiihJuuTmLDxQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_33_G1nVAEeiihJuuTmLDxQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_33_G13VAEeiihJuuTmLDxQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_33_G0XVAEeiihJuuTmLDxQ" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_33_G0nVAEeiihJuuTmLDxQ" x="270" y="135" width="40" height="35"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_C1hLYHVBEeiihJuuTmLDxQ" type="2001" element="_C0oakHVBEeiihJuuTmLDxQ">
+          <children xmi:type="notation:Node" xmi:id="_C1hLY3VBEeiihJuuTmLDxQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_C1hLZHVBEeiihJuuTmLDxQ" x="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_C1hLZXVBEeiihJuuTmLDxQ" type="3005" element="_C0oakXVBEeiihJuuTmLDxQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_C1hLZnVBEeiihJuuTmLDxQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_C1hLZ3VBEeiihJuuTmLDxQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_C1hLYXVBEeiihJuuTmLDxQ" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_C1hLYnVBEeiihJuuTmLDxQ" x="516" y="75" width="40" height="40"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_NQXZoHVBEeiihJuuTmLDxQ" type="2001" element="_NQEesHVBEeiihJuuTmLDxQ">
+          <children xmi:type="notation:Node" xmi:id="_NQXZo3VBEeiihJuuTmLDxQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_NQXZpHVBEeiihJuuTmLDxQ" x="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_NQXZpXVBEeiihJuuTmLDxQ" type="3005" element="_NQEesXVBEeiihJuuTmLDxQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_NQXZpnVBEeiihJuuTmLDxQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NQXZp3VBEeiihJuuTmLDxQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_NQXZoXVBEeiihJuuTmLDxQ" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NQXZonVBEeiihJuuTmLDxQ" x="375" y="30" width="40" height="40"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_zAbiAnVAEeiihJuuTmLDxQ"/>
+        <edges xmi:type="notation:Edge" xmi:id="_K2szkHVBEeiihJuuTmLDxQ" type="4001" element="_K2G9sHVBEeiihJuuTmLDxQ" source="_33_G0HVAEeiihJuuTmLDxQ" target="_C1hLYHVBEeiihJuuTmLDxQ">
+          <children xmi:type="notation:Node" xmi:id="_K2szlHVBEeiihJuuTmLDxQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K2szlXVBEeiihJuuTmLDxQ" x="1" y="-11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_K2szlnVBEeiihJuuTmLDxQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K2szl3VBEeiihJuuTmLDxQ" x="-1" y="8"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_K2szmHVBEeiihJuuTmLDxQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K2szmXVBEeiihJuuTmLDxQ" x="-3" y="9"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_K2szkXVBEeiihJuuTmLDxQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_K2szknVBEeiihJuuTmLDxQ" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_K2szk3VBEeiihJuuTmLDxQ" points="[0, 0, -206, 61]$[206, -61, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K2szmnVBEeiihJuuTmLDxQ" id="(1.0,0.45714285714285713)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_K2szm3VBEeiihJuuTmLDxQ" id="(0.0,0.375)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_33184HVAEeiihJuuTmLDxQ" name="as" outgoingEdges="_K2G9sHVBEeiihJuuTmLDxQ" width="4" height="4" resizeKind="NSEW">
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_33184XVAEeiihJuuTmLDxQ" showIcon="false" workspacePath="/mymicroservice.design/icons/aggregateservice.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/mymicroservice.design/description/mymicroservice.odesign#//@ownedViewpoints[name='MicroserviceViewpoint']/@ownedRepresentations[name='MicroserviceDiagram']/@defaultLayer/@nodeMappings[name='AggregateServiceNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/mymicroservice.design/description/mymicroservice.odesign#//@ownedViewpoints[name='MicroserviceViewpoint']/@ownedRepresentations[name='MicroserviceDiagram']/@defaultLayer/@nodeMappings[name='AggregateServiceNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_C0oakHVBEeiihJuuTmLDxQ" name="op1" incomingEdges="_K2G9sHVBEeiihJuuTmLDxQ" width="4" height="4" resizeKind="NSEW">
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_C0oakXVBEeiihJuuTmLDxQ" showIcon="false" workspacePath="/mymicroservice.design/icons/operation.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/mymicroservice.design/description/mymicroservice.odesign#//@ownedViewpoints[name='MicroserviceViewpoint']/@ownedRepresentations[name='MicroserviceDiagram']/@defaultLayer/@nodeMappings[name='OperationNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/mymicroservice.design/description/mymicroservice.odesign#//@ownedViewpoints[name='MicroserviceViewpoint']/@ownedRepresentations[name='MicroserviceDiagram']/@defaultLayer/@nodeMappings[name='OperationNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_NQEesHVBEeiihJuuTmLDxQ" name="op2" width="4" height="4" resizeKind="NSEW">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_NQEesXVBEeiihJuuTmLDxQ" showIcon="false" workspacePath="/mymicroservice.design/icons/operation.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/mymicroservice.design/description/mymicroservice.odesign#//@ownedViewpoints[name='MicroserviceViewpoint']/@ownedRepresentations[name='MicroserviceDiagram']/@defaultLayer/@nodeMappings[name='OperationNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/mymicroservice.design/description/mymicroservice.odesign#//@ownedViewpoints[name='MicroserviceViewpoint']/@ownedRepresentations[name='MicroserviceDiagram']/@defaultLayer/@nodeMappings[name='OperationNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_K2G9sHVBEeiihJuuTmLDxQ" sourceNode="_33184HVAEeiihJuuTmLDxQ" targetNode="_C0oakHVBEeiihJuuTmLDxQ">
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_K2QHoHVBEeiihJuuTmLDxQ" size="2" strokeColor="69,69,69">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/mymicroservice.design/description/mymicroservice.odesign#//@ownedViewpoints[name='MicroserviceViewpoint']/@ownedRepresentations[name='MicroserviceDiagram']/@defaultLayer/@edgeMappings[name='AggregateServiceToOperation']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_K2QHoXVBEeiihJuuTmLDxQ"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/mymicroservice.design/description/mymicroservice.odesign#//@ownedViewpoints[name='MicroserviceViewpoint']/@ownedRepresentations[name='MicroserviceDiagram']/@defaultLayer/@edgeMappings[name='AggregateServiceToOperation']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/mymicroservice.design/description/mymicroservice.odesign#//@ownedViewpoints[name='MicroserviceViewpoint']/@ownedRepresentations[name='MicroserviceDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_zASYFHVAEeiihJuuTmLDxQ"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/mymicroservice.design/description/mymicroservice.odesign#//@ownedViewpoints[name='MicroserviceViewpoint']/@ownedRepresentations[name='MicroserviceDiagram']/@defaultLayer"/>
+    <target xmi:type="micro:MicroserviceArchitecture" href="NewMicroserviceArchitecture.xmi#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram xmi:id="_Pi3uAH4kEeir2I1CU434ug" name="new Microservice Container Diagram_Model" uid="_Pit9AH4kEeir2I1CU434ug">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_Pi3uAX4kEeir2I1CU434ug" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_Pi3uAn4kEeir2I1CU434ug"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_Pi3uBn4kEeir2I1CU434ug" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_Pi3uB34kEeir2I1CU434ug" type="Sirius" element="_Pi3uAH4kEeir2I1CU434ug" measurementUnit="Pixel">
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_Pi3uCH4kEeir2I1CU434ug"/>
+      </data>
+    </ownedAnnotationEntries>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/mymicroservice.design/description/mymicroservice.odesign#//@ownedViewpoints[name='MicroserviceViewpoint']/@ownedRepresentations[name='Microservice%20Container%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_Pi3uBH4kEeir2I1CU434ug"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/mymicroservice.design/description/mymicroservice.odesign#//@ownedViewpoints[name='MicroserviceViewpoint']/@ownedRepresentations[name='Microservice%20Container%20Diagram']/@defaultLayer"/>
+    <target xmi:type="micro:MicroserviceArchitecture" href="NewMicroserviceArchitecture.xmi#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

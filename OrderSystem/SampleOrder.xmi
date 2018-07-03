@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<micro:MicroserviceArchitecture xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:micro="http://it.univa.disim.micro" xsi:schemaLocation="http://it.univa.disim.micro ../Microservice_EMF/model/microArch.ecore">
+  <services xsi:type="micro:AggregateService" name="Order" fullname="asd222" description="asd1222" shortname="asd2123123" port="5000">
+    <operation name="CreateOrder" publish="//@services.0/@api/@events.0" model="//@services.0/@models.0" isMethodController="true">
+      <Saga name="CreateOrderSaga">
+        <Steps name="CompensateOrder" commands="//@services.0/@api/@commands.0"/>
+        <Steps name="ValidateCust" commands="//@services.2/@api/@commands.0"/>
+        <Steps name="GenerateInvoice" commands="//@services.1/@api/@commands.0 //@services.1/@api/@commands.1"/>
+        <Steps name="CompleteOrder" commands="//@services.0/@api/@commands.1"/>
+        <Data name="CreateOrderSagaData"/>
+      </Saga>
+    </operation>
+    <api name="API">
+      <events name="OrderCreatedEvent"/>
+      <commands name="CompensateOrder"/>
+      <commands name="CompleteOrder" commandType="invoke"/>
+      <infos name="Order"/>
+    </api>
+    <models name="Order">
+      <attributes xsi:type="micro:PrimitiveTypeAttribute" name="Id" isId="true" isGenerated="true"/>
+    </models>
+  </services>
+  <services xsi:type="micro:AggregateService" name="Invoice" fullname="asd" description="asd1" shortname="asd3" port="5001">
+    <operation name="GenerateInvoice" publish="//@services.1/@api/@events.0" model="//@services.1/@models.0"/>
+    <api name="API">
+      <events name="InvoiceGeneratedEvent"/>
+      <commands name="GenerateInvoice" commandType="reply" replyInfo="//@services.1/@api/@infos.0"/>
+      <commands name="CompensateGenerateInvoice"/>
+      <infos name="Invoice" dto="//@services.1/@models.0"/>
+    </api>
+    <models name="Invoice">
+      <attributes xsi:type="micro:PrimitiveTypeAttribute" name="Id" isId="true" isGenerated="true"/>
+    </models>
+  </services>
+  <services xsi:type="micro:AggregateService" name="Customer" fullname="customer" description="asd1" shortname="customer" port="5002">
+    <operation name="CreateCustomer" publish="//@services.2/@api/@events.0" model="//@services.2/@models.0" isMethodController="true"/>
+    <api name="API">
+      <events name="CistomerCreatedEvent"/>
+      <commands name="ValidateCustomer" commandType="invoke"/>
+      <infos name="Customer" dto="//@services.2/@models.0"/>
+    </api>
+    <models name="Customer">
+      <attributes xsi:type="micro:PrimitiveTypeAttribute" name="Id" isId="true" isGenerated="true"/>
+    </models>
+  </services>
+  <services xsi:type="micro:ViewService" name="newViewService" fullname="sad" description="asdw1" shortname="dwedwedf" replicateServices="//@services.0 //@services.1 //@services.2"/>
+</micro:MicroserviceArchitecture>

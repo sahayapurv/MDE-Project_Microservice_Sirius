@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:micro="http://it.univa.disim.micro" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description">
+  <viewpoint:DAnalysis xmi:id="_x4RWEH4SEeimDqLutHlZeg" selectedViews="_39AfsH4SEeimDqLutHlZeg" version="12.1.0.201708031200">
+    <semanticResources>platform:/resource/Microservice_EMF/model/microArch.ecore</semanticResources>
+    <semanticResources>http://www.eclipse.org/emf/2002/Ecore</semanticResources>
+    <semanticResources>microArch_model.xmi</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_39AfsH4SEeimDqLutHlZeg">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/mymicroservice.design/description/mymicroservice.odesign#//@ownedViewpoints[name='MicroserviceViewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_x7RT0H4fEeir2I1CU434ug" name="new Microservice Container Diagram_MicroArch" repPath="#_x4ynkH4fEeir2I1CU434ug">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/mymicroservice.design/description/mymicroservice.odesign#//@ownedViewpoints[name='MicroserviceViewpoint']/@ownedRepresentations[name='Microservice%20Container%20Diagram']"/>
+        <target xmi:type="micro:MicroserviceArchitecture" href="microArch_model.xmi#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram xmi:id="_x7O3kH4fEeir2I1CU434ug" name="new Microservice Container Diagram_MicroArch" uid="_x4ynkH4fEeir2I1CU434ug">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_x7O3kX4fEeir2I1CU434ug" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_x7O3kn4fEeir2I1CU434ug"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_x7dhEH4fEeir2I1CU434ug" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_x7dhEX4fEeir2I1CU434ug" type="Sirius" element="_x7O3kH4fEeir2I1CU434ug" measurementUnit="Pixel">
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_x7dhEn4fEeir2I1CU434ug"/>
+      </data>
+    </ownedAnnotationEntries>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/mymicroservice.design/description/mymicroservice.odesign#//@ownedViewpoints[name='MicroserviceViewpoint']/@ownedRepresentations[name='Microservice%20Container%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_x7O4I34fEeir2I1CU434ug"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/mymicroservice.design/description/mymicroservice.odesign#//@ownedViewpoints[name='MicroserviceViewpoint']/@ownedRepresentations[name='Microservice%20Container%20Diagram']/@defaultLayer"/>
+    <target xmi:type="micro:MicroserviceArchitecture" href="microArch_model.xmi#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

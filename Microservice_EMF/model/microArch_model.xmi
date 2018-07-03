@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<micro:MicroserviceArchitecture xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:micro="http://it.univa.disim.micro">
+  <services xsi:type="micro:AggregateService" name="customer-service" fullname="CustomerService" description="Customer Service Description" shortname="Customer" port="5000">
+    <operation name="createCustomer" isMethodController="true">
+      <Saga name="CreateOrder">
+        <Steps name="compensateOrder" commands="//@services.2/@api/@commands.1"/>
+        <Steps name="validateCustomer"/>
+        <Steps name="requestInvoice" commands="//@services.1/@api/@commands.0 //@services.1/@api/@commands.1"/>
+        <Steps name="completeOrder" commands="//@services.2/@api/@commands.0"/>
+        <Data name="CreateOrder"/>
+      </Saga>
+    </operation>
+    <operation name="findCustomer" operationType="retrieve" isMethodController="true"/>
+    <operation name="updateCustomer" operationType="update" isMethodController="true"/>
+    <operation name="deleteCustomer" operationType="delete" isMethodController="true"/>
+    <models name="Customer">
+      <attributes xsi:type="micro:PrimitiveTypeAttribute" name="Id" isId="true"/>
+      <attributes xsi:type="micro:PrimitiveTypeAttribute" name="Name"/>
+    </models>
+  </services>
+  <services xsi:type="micro:AggregateService" name="invoice-service" fullname="InvoiceService" description="Invoice Service Description" shortname="Invoice" port="5001">
+    <operation name="createInvoice" publish="//@services.1/@api/@events.0"/>
+    <operation name="rejectInvoice" operationType="delete" publish="//@services.1/@api/@events.1"/>
+    <operation name="findInvoice" operationType="retrieve" isMethodController="true"/>
+    <api name="api">
+      <events name="InvoiceCreatedEvent"/>
+      <events name="InvoiceCreationFailedEvent"/>
+      <commands name="RequestInvoiceCommand" commandType="reply" replyInfo="//@services.1/@api/@infos.0"/>
+      <commands name="CompensateInvoiceCommand"/>
+      <commands name="ValidateInvoiceByOrderService" commandType="invoke"/>
+      <infos name="Invoice"/>
+    </api>
+    <models name="Invoice">
+      <attributes xsi:type="micro:PrimitiveTypeAttribute" name="Id" isId="true" isGenerated="true"/>
+      <attributes xsi:type="micro:PrimitiveTypeAttribute" name="OrderId"/>
+      <attributes xsi:type="micro:PrimitiveTypeAttribute" name="InvoiceComment"/>
+    </models>
+  </services>
+  <services xsi:type="micro:AggregateService" name="order-service" fullname="OrderService" description="Order Service Description" shortname="Order" port="5002">
+    <operation name="createOrder" publish="//@services.2/@api/@events.1" isMethodController="true"/>
+    <operation name="findOrder" operationType="retrieve" isMethodController="true"/>
+    <operation name="updateOrder" operationType="update" isMethodController="true">
+      <Saga name="UpdateOrder">
+        <Steps name="validateCustomer"/>
+        <Steps name="validateInvoice" commands="//@services.1/@api/@commands.2"/>
+        <Steps name="editOrder" commands="//@services.2/@api/@commands.2"/>
+        <Data name="UpdateOrder"/>
+      </Saga>
+    </operation>
+    <operation name="rejectOrder" operationType="delete" publish="//@services.2/@api/@events.2"/>
+    <operation name="completeOrder" operationType="update" publish="//@services.2/@api/@events.0"/>
+    <operation name="editOrder" operationType="update" publish="//@services.2/@api/@events.3"/>
+    <operation name="deleteOrder" operationType="delete" publish="//@services.2/@api/@events.4" isMethodController="true"/>
+    <operation name="updateInvoiceOrder" operationType="update" publish="//@services.2/@api/@events.5"/>
+    <api name="api">
+      <events name="OrderCompletedEvent"/>
+      <events name="OrderCreatedEvent"/>
+      <events name="OrderRejectedEvent"/>
+      <events name="OrderEditedEvent"/>
+      <events name="OrderDeletedEvent"/>
+      <events name="OrderUpdatedInvoiceEvent"/>
+      <commands name="CompleteOrderCommand" commandType="invoke"/>
+      <commands name="RejectOrderCommand"/>
+      <commands name="EditOrderCommand" commandType="invoke"/>
+      <infos name="Order"/>
+    </api>
+    <models name="Order">
+      <attributes xsi:type="micro:PrimitiveTypeAttribute" name="Id" isId="true" isGenerated="true"/>
+      <attributes xsi:type="micro:PrimitiveTypeAttribute" name="Description"/>
+      <attributes xsi:type="micro:PrimitiveTypeAttribute" name="CustomerId"/>
+      <attributes xsi:type="micro:PrimitiveTypeAttribute" name="InvoiceId"/>
+    </models>
+  </services>
+  <services xsi:type="micro:ViewService" name="CustomerViewService" fullname="CustomerViewService" shortname="customer" replicateServices="//@services.0"/>
+</micro:MicroserviceArchitecture>

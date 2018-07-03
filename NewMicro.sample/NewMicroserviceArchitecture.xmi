@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<micro:MicroserviceArchitecture xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:micro="http://it.univa.disim.micro" xsi:schemaLocation="http://it.univa.disim.micro ../Microservice_EMF/model/microArch.ecore" name="newAggregateService">
+  <services xsi:type="micro:AggregateService" name="newAggregateService">
+    <operation name="newOperation1"/>
+    <operation name="newOperation2">
+      <Saga name="newSaga">
+        <Steps name="newStep"/>
+        <Data name="newData"/>
+      </Saga>
+    </operation>
+    <api name="newApi">
+      <events name="newEvent"/>
+      <commands name="newCommand"/>
+      <infos name="newInfo"/>
+    </api>
+    <models name="newModel">
+      <attributes xsi:type="micro:PrimitiveTypeAttribute" name="newPrimitiveTypeAttribute"/>
+      <attributes xsi:type="micro:ReferenceAttribute" name="newReferenceTypeAttribute"/>
+    </models>
+  </services>
+  <services xsi:type="micro:ViewService" name="newViewService" replicateServices="//@services.0"/>
+</micro:MicroserviceArchitecture>
